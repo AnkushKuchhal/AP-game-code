@@ -1,5 +1,4 @@
 import yaml
-from weapons import Weapon
 from player import Player
 from getpass import getpass
 import sys
