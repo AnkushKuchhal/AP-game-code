@@ -1,9 +1,9 @@
-import unittest
+#import unittest
 
 import player
 
 
-class PlayerTest (unittest.TestCase):
+#class PlayerTest (unittest.TestCase):
     # test_hash_password tests if the Player.hashPassword method hashes the password correctly.
     def test_hash_password(self):
         pl = player.Player()
