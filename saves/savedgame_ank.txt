@@ -1,0 +1,8 @@
+{
+    "ank": {
+        "stage": 6,
+        "score": 223,
+        "previous_save": true,
+        "warrior": "Viking"
+    }
+}

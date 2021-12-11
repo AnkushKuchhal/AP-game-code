@@ -1,0 +1,8 @@
+{
+    "ankush": {
+        "stage": 7,
+        "score": -40,
+        "previous_save": true,
+        "warrior": "Viking"
+    }
+}
