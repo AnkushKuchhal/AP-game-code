@@ -1,5 +1,4 @@
 import yaml
-from weapons import Weapon
 from player import Player
 from getpass import getpass
 import sys
@@ -13,7 +12,8 @@ settings: dict[str, list[str]] = yaml.load(open('config.yml'), Loader=yaml.FullL
 if __name__ == '__main__': 
   print(Fore.LIGHTCYAN_EX + "\n \n \n \n"
     f" __-----_________________[]]__________________________________________________\n"
-    f"&&&&&&&#%%&#%&%&%&%&%#%&|[]]__________________________________________________\ \n")
+    f"&&&&&&&#%%&#%&%&%&%&%#%&|[]]__________________________________________________\ \n"
+    f"                         []]\n\n")
                                                     
   print(Fore.CYAN +  f"d  d  b d sss   d        sSSs.   sSSSs   d s   sb d sss        sss sssss   sSSSs        sss sssss d    d d sss\n"        
                      f"S  S  S S       S       S       S     S  S  S S S S                S      S     S           S     S    S S\n"            
@@ -45,10 +45,11 @@ if __name__ == '__main__':
   print (Fore.YELLOW + ' Play this game if you like medieval weapons. There are 25 levels in this game. '+ Style.RESET_ALL)
   print (Fore.LIGHTCYAN_EX + ' You can save your game and finish later. Once all 25 levels are completed, You can see your highscore. '+ Style.RESET_ALL)
   print (Fore.YELLOW + ' Pick Up a Weapon that belongs to your warrior class, Picking up wrong weapons will give you negative points.' + Style.RESET_ALL)
+
   options = ['Register', "Login"] #for login/register page
   print(Fore.LIGHTBLUE_EX + "Select from:", ", ".join(options) + Style.RESET_ALL)
   player = Player()
-  if player.displayOptions(options).lower() == 'register': #type: ignore
+  if player.displayOptions(options).lower() == 'register': 
     while True:
       name = input(Fore.CYAN + "Warrior Name: " + Style.RESET_ALL)
       username = input(Fore.CYAN + "Username: " + Style.RESET_ALL)

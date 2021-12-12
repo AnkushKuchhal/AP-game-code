@@ -1,0 +1,8 @@
+{
+    "akk": {
+        "stage": 4,
+        "score": 2,
+        "previous_save": true,
+        "warrior": "Viking"
+    }
+}
