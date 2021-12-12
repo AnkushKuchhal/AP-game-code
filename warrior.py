@@ -4,7 +4,7 @@
 from typing import Union
 class Warrior:
     def __init__(self) -> None:
-        self.weapons: dict[str, list[dict[str, Union[str, int]]]] = {'Knight': [{'name': 'Long Sword', 'value': 7},
+        self.weapons: dict[str, list[dict[str, Union[str, int]]]] = {'Knight': [{'name': 'Long Sword', 'value': 7}, #hardcoded weapon names and respective scores
             {'name': 'Light Shield', 'value': 6},
             {'name': 'Dagger', 'value': 5},
             {'name': 'Chain mail', 'value': 6},
@@ -57,16 +57,16 @@ class Warrior:
 
     def getWeapons(self, warrior_name):
         return self.weapons[warrior_name]
-class Viking(Warrior):
+class Viking(Warrior): #creating viking class
     def __init__(self) -> None:
         Warrior.__init__(self)
     
     def getWeapons(self):
-        return super().getWeapons(repr(self))    #ask
+        return super().getWeapons(repr(self))   
     def __repr__(self) -> str:
         return 'Viking'
 
-class Samurai(Warrior):
+class Samurai(Warrior): #creating viking class
     def __init__(self) -> None:
         Warrior.__init__(self)
     def getWeapons(self):
@@ -74,14 +74,14 @@ class Samurai(Warrior):
 
     def __repr__(self) -> str:
         return 'Samurai'
-class Maratha(Warrior):
+class Maratha(Warrior): #creating viking class
     def __init__(self) -> None:
         Warrior.__init__(self)
     def getWeapons(self):
         return super().getWeapons(repr(self))
     def __repr__(self) -> str:
         return 'Maratha'
-class Knight(Warrior):
+class Knight(Warrior): #creating viking class
     def __init__(self) -> None:
         Warrior.__init__(self)
     def getWeapons(self):
